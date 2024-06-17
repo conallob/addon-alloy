@@ -31,17 +31,8 @@
         "ARG GRAFANA_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "grafana/grafana"
+      "depNameTemplate": "grafana/alloy"
     },
-    {
-      "fileMatch": ["/Dockerfile$"],
-      "matchStrings": [
-        "ARG GRAFANA_IMAGE_RENDERER_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
-      ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "grafana/grafana-image-renderer"
-    }
-  ],
   "packageRules": [
     {
       "matchDatasources": ["repology"],
